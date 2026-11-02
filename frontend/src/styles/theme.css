@@ -1,0 +1,41 @@
+:root {
+  --color-background: #F2F4F6;
+  --color-card: #FFFFFF;
+  --color-stroke: #E3E7EB;
+  --color-ink: #14181D;
+  --color-muted: #5D6670;
+  --color-accent: #E8481A;
+  --color-accent-soft: #FDEAE3;
+  --color-on-accent: #FFFFFF;
+  --color-urgent: #C8102E;
+  --color-urgent-soft: #FBE6E9;
+  --color-watch: #F2B705;
+  --color-watch-soft: #FEF4D6;
+  --color-watch-text: #8A6300;
+  --color-okay: #00804A;
+  --color-okay-soft: #E1F2EA;
+  --color-sea: #DCE8F1;
+  --color-sea-line: #B7CCDD;
+  --color-container-navy: #2E4A63;
+  --color-container-grey: #8FA3B5;
+
+  --font-heading: "Hanken Grotesk", "Noto Sans Devanagari", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible Next", "Noto Sans Devanagari", "Noto Sans Myanmar", "Noto Sans Bengali", system-ui, sans-serif;
+
+  --size-title: 24px;
+  --size-number: 22px;
+  --size-large: 17px;
+  --size-medium: 16px;
+  --size-small: 14px;
+  --size-tiny: 13px;
+
+  --radius-card: 22px;
+  --radius-tile: 18px;
+  --radius-round: 999px;
+
+  --space-small: 8px;
+  --space-medium: 12px;
+  --space-large: 16px;
+
+  color-scheme: light;
+}
