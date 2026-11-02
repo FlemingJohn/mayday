@@ -1,0 +1,14 @@
+{
+  "name": "mayday",
+  "private": true,
+  "type": "module",
+  "workspaces": ["ai", "mcp", "backend", "frontend"],
+  "scripts": {
+    "check": "npm run check --workspaces",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^5.9.3"
+  }
+}
