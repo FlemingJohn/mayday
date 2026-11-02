@@ -1,0 +1,18 @@
+{
+  "name": "@mayday/ai",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./runReportCheck": "./src/reportCheck/runReportCheck.ts",
+    "./types/*": "./src/types/*"
+  },
+  "scripts": {
+    "check": "tsc -p tsconfig.json",
+    "test": "node --test \"src/**/*.test.ts\"",
+    "try": "node --env-file=../.env src/trial/runSampleReport.ts"
+  },
+  "dependencies": {
+    "openai": "^7.47.0",
+    "zod": "^4.6.7"
+  }
+}
