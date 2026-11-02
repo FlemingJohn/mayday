@@ -1,110 +1,216 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640" role="img" aria-label="Mayday architecture: phones, backend with the AI pipeline, the Otari gateway with open-weight models, and the Shipwatch MCP server.">
-  <rect x="1" y="1" width="1098" height="638" rx="24" fill="#F2F4F6" stroke="#E3E7EB" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="690" viewBox="0 0 1100 690" role="img" aria-label="Mayday architecture: seafarer and officer phones, the backend with its AI pipeline, the Otari gateway with open-weight models, and the Shipwatch MCP server.">
   <defs>
-    <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0 0l10 5-10 5z" fill="#5D6670"/>
-    </marker>
-    <marker id="arrowAccent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0 0l10 5-10 5z" fill="#E8481A"/>
-    </marker>
+    <clipPath id="card"><rect x="1" y="1" width="1098" height="688" rx="24"/></clipPath>
+    <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#5D6670"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#E8481A"/></marker>
+    <symbol id="iconMicrophone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="8" y="2" width="8" height="13" rx="4" fill="currentColor" stroke="none"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4"/></g></symbol>
+    <symbol id="iconCamera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h2.5l1.6-2.2h5.8L16.5 6H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.6"/></g></symbol>
+    <symbol id="iconSearch" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></g></symbol>
+    <symbol id="iconCode" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14"/></g></symbol>
+    <symbol id="iconChat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8.5 9.5h7M8.5 12.5h4.5" stroke-linecap="round"/></g></symbol>
+    <symbol id="iconShield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></g></symbol>
+    <symbol id="iconRouting" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h6l4-6h7M9 12l4 6h7M17 3l3 3-3 3M17 15l3 3-3 3"/></g></symbol>
+    <symbol id="iconCoin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.4-1.5-2.5-1.5-1.4 0-2.5.8-2.5 2s1.1 1.6 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2c-1.1 0-2-.5-2.5-1.5M12 6.5v11"/></g></symbol>
+    <symbol id="iconPerson" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6 8-6s7.2 2 8 6"/></g></symbol>
+    <symbol id="iconGlobe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.8 3.8 5.8 3.8 9s-1.3 6.2-3.8 9c-2.5-2.8-3.8-5.8-3.8-9S9.5 5.8 12 3z"/></g></symbol>
+    <symbol id="iconTerminal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="3"/><path d="M7 10l3 2.5L7 15M12.5 15H17"/></g></symbol>
+    <symbol id="iconNoSignal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 18v1M9 15v4M14 11v8M19 7v12" opacity=".45"/><path d="M3 4l18 16"/></g></symbol>
+    <symbol id="iconLock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="4.5" y="10.5" width="15" height="10" rx="3"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></g></symbol>
   </defs>
+
+  <rect x="1" y="1" width="1098" height="688" rx="24" fill="#F2F4F6" stroke="#E3E7EB" stroke-width="2"/>
+  <g clip-path="url(#card)">
+    <path d="M0 658c45-10 90-10 137 0s92 10 137 0 92-10 137 0 92 10 137 0 92-10 137 0 92 10 137 0 92-10 137 0 92 10 137 0v40H0z" fill="#DCE8F1"/>
+    <path d="M0 668c45-10 90-10 137 0s92 10 137 0 92-10 137 0 92 10 137 0 92-10 137 0 92 10 137 0 92-10 137 0 92 10 137 0" fill="none" stroke="#B7CCDD" stroke-width="2"/>
+  </g>
+
   <g font-family="Helvetica, Arial, sans-serif" fill="#14181D">
-
     <text x="40" y="52" font-size="22" font-weight="700">How Mayday is built</text>
+    <text x="40" y="78" font-size="14" fill="#5D6670">Every AI step goes through <tspan fill="#E8481A" font-weight="700">Otari</tspan>, on open-weight models only</text>
 
-    <g transform="translate(40 92)">
-      <rect width="230" height="210" rx="20" fill="#FFFFFF" stroke="#E3E7EB" stroke-width="2"/>
-      <text x="20" y="34" font-size="13" font-weight="700" letter-spacing="2" fill="#E8481A">FRONTEND</text>
-      <text x="20" y="62" font-size="18" font-weight="700">Seafarer phone</text>
-      <g font-size="14" fill="#5D6670">
-        <text x="20" y="92">Voice, photo or text</text>
-        <text x="20" y="114">Saved on the phone offline</text>
-        <text x="20" y="136">Sends when signal returns</text>
-        <text x="20" y="158">Quick check works offline</text>
+    <g transform="translate(40 100)">
+      <rect width="250" height="250" rx="20" fill="#FFFFFF" stroke="#E3E7EB" stroke-width="2"/>
+      <g transform="translate(18 26)">
+        <rect width="96" height="196" rx="18" fill="#14181D"/>
+        <rect x="6" y="6" width="84" height="184" rx="13" fill="#FFFFFF"/>
+        <rect x="34" y="11" width="28" height="7" rx="3.5" fill="#14181D"/>
+        <text x="14" y="38" font-size="8" fill="#5D6670">Your ship</text>
+        <text x="14" y="50" font-size="10" font-weight="700" fill="#E8481A">Ocean Pearl</text>
+        <circle cx="48" cy="92" r="27" fill="#FDEAE3"/>
+        <circle cx="48" cy="92" r="20" fill="#E8481A"/>
+        <use href="#iconMicrophone" x="38" y="82" width="20" height="20" color="#FFFFFF"/>
+        <text x="48" y="134" text-anchor="middle" font-size="9" font-weight="700">Hold to talk</text>
+        <rect x="14" y="146" width="68" height="20" rx="10" fill="#14181D"/>
+        <use href="#iconNoSignal" x="19" y="149" width="14" height="14" color="#FFFFFF"/>
+        <text x="55" y="160" text-anchor="middle" font-size="8" font-weight="700" fill="#FFFFFF">Saved</text>
       </g>
-      <rect x="20" y="172" width="190" height="24" rx="12" fill="#F2F4F6"/>
-      <text x="115" y="189" text-anchor="middle" font-size="12" font-weight="700">Preact · PWA · Capacitor</text>
+      <text x="132" y="44" font-size="11" font-weight="700" letter-spacing="1.8" fill="#E8481A">FRONTEND</text>
+      <text x="132" y="68" font-size="17" font-weight="700">Seafarer</text>
+      <g font-size="13" fill="#5D6670">
+        <circle cx="136" cy="96" r="3" fill="#E8481A"/><text x="146" y="100">Voice, photo</text>
+        <text x="146" y="116">or typed text</text>
+        <circle cx="136" cy="140" r="3" fill="#E8481A"/><text x="146" y="144">Saved offline</text>
+        <circle cx="136" cy="168" r="3" fill="#E8481A"/><text x="146" y="172">Sends in port</text>
+        <circle cx="136" cy="196" r="3" fill="#E8481A"/><text x="146" y="200">Any language</text>
+      </g>
+      <use href="#iconLock" x="132" y="214" width="14" height="14" color="#5D6670"/>
+      <text x="150" y="226" font-size="11" fill="#5D6670">No name needed</text>
     </g>
 
-    <g transform="translate(40 330)">
-      <rect width="230" height="150" rx="20" fill="#FFFFFF" stroke="#E3E7EB" stroke-width="2"/>
-      <text x="20" y="34" font-size="13" font-weight="700" letter-spacing="2" fill="#E8481A">FRONTEND</text>
-      <text x="20" y="62" font-size="18" font-weight="700">Welfare officer</text>
-      <g font-size="14" fill="#5D6670">
-        <text x="20" y="92">Ships that need help</text>
-        <text x="20" y="114">Take a case, mark solved</text>
+    <g transform="translate(40 370)">
+      <rect width="250" height="220" rx="20" fill="#FFFFFF" stroke="#E3E7EB" stroke-width="2"/>
+      <g transform="translate(18 22)">
+        <rect width="96" height="176" rx="18" fill="#14181D"/>
+        <rect x="6" y="6" width="84" height="164" rx="13" fill="#FFFFFF"/>
+        <rect x="34" y="11" width="28" height="7" rx="3.5" fill="#14181D"/>
+        <text x="14" y="40" font-size="9" font-weight="700">Ships</text>
+        <g>
+          <rect x="12" y="50" width="72" height="30" rx="7" fill="#FFFFFF" stroke="#E3E7EB"/>
+          <rect x="12" y="50" width="5" height="30" rx="2" fill="#C8102E"/>
+          <rect x="22" y="57" width="40" height="5" rx="2.5" fill="#14181D"/><rect x="22" y="67" width="52" height="4" rx="2" fill="#C9D3DB"/>
+          <rect x="12" y="86" width="72" height="30" rx="7" fill="#FFFFFF" stroke="#E3E7EB"/>
+          <rect x="12" y="86" width="5" height="30" rx="2" fill="#C8102E"/>
+          <rect x="22" y="93" width="34" height="5" rx="2.5" fill="#14181D"/><rect x="22" y="103" width="48" height="4" rx="2" fill="#C9D3DB"/>
+          <rect x="12" y="122" width="72" height="30" rx="7" fill="#FFFFFF" stroke="#E3E7EB"/>
+          <rect x="12" y="122" width="5" height="30" rx="2" fill="#F2B705"/>
+          <rect x="22" y="129" width="44" height="5" rx="2.5" fill="#14181D"/><rect x="22" y="139" width="40" height="4" rx="2" fill="#C9D3DB"/>
+        </g>
+      </g>
+      <text x="132" y="44" font-size="11" font-weight="700" letter-spacing="1.8" fill="#E8481A">FRONTEND</text>
+      <text x="132" y="68" font-size="17" font-weight="700">Welfare</text>
+      <text x="132" y="88" font-size="17" font-weight="700">officer</text>
+      <g font-size="13" fill="#5D6670">
+        <circle cx="136" cy="116" r="3" fill="#E8481A"/><text x="146" y="120">Worst ships first</text>
+        <circle cx="136" cy="144" r="3" fill="#E8481A"/><text x="146" y="148">Take a case</text>
+        <circle cx="136" cy="172" r="3" fill="#E8481A"/><text x="146" y="176">Mark it solved</text>
       </g>
     </g>
 
-    <path d="M274 196h86" stroke="#5D6670" stroke-width="2.5" marker-end="url(#arrowInk)"/>
-    <path d="M274 404h86" stroke="#5D6670" stroke-width="2.5" marker-end="url(#arrowInk)"/>
-    <text x="317" y="186" text-anchor="middle" font-size="12" fill="#5D6670">HTTPS</text>
+    <path d="M294 225h30" stroke="#5D6670" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+    <path d="M294 480h30" stroke="#5D6670" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+    <text x="309" y="212" text-anchor="middle" font-size="11" fill="#5D6670">HTTPS</text>
 
-    <g transform="translate(366 92)">
-      <rect width="320" height="430" rx="20" fill="#FFFFFF" stroke="#E3E7EB" stroke-width="2"/>
-      <text x="20" y="34" font-size="13" font-weight="700" letter-spacing="2" fill="#E8481A">BACKEND</text>
-      <text x="20" y="62" font-size="18" font-weight="700">Hono API + SQLite</text>
-      <g font-size="14" fill="#5D6670">
-        <text x="20" y="90">Saves reports, ignores duplicates</text>
-        <text x="20" y="112">Groups reports into ship cases</text>
+    <g transform="translate(330 100)">
+      <rect width="362" height="490" rx="20" fill="#FFFFFF" stroke="#E3E7EB" stroke-width="2"/>
+      <g transform="translate(20 22)">
+        <rect width="60" height="16" rx="4" fill="#2E4A63"/><circle cx="10" cy="8" r="2.5" fill="#00804A"/><rect x="18" y="6" width="32" height="4" rx="2" fill="#8FA3B5"/>
+        <rect y="20" width="60" height="16" rx="4" fill="#2E4A63"/><circle cx="10" cy="28" r="2.5" fill="#00804A"/><rect x="18" y="26" width="32" height="4" rx="2" fill="#8FA3B5"/>
+        <rect y="40" width="60" height="16" rx="4" fill="#2E4A63"/><circle cx="10" cy="48" r="2.5" fill="#F2B705"/><rect x="18" y="46" width="32" height="4" rx="2" fill="#8FA3B5"/>
+        <g transform="translate(72 6)">
+          <path d="M0 6c0-4 30-4 30 0v36c0 4-30 4-30 0z" fill="#FDEAE3" stroke="#E8481A" stroke-width="2"/>
+          <ellipse cx="15" cy="6" rx="15" ry="4.5" fill="#FFFFFF" stroke="#E8481A" stroke-width="2"/>
+          <path d="M0 18c0 4 30 4 30 0M0 30c0 4 30 4 30 0" fill="none" stroke="#E8481A" stroke-width="1.5"/>
+        </g>
       </g>
-      <g transform="translate(16 134)">
-        <rect width="288" height="278" rx="16" fill="#F2F4F6"/>
-        <text x="16" y="30" font-size="13" font-weight="700" letter-spacing="2" fill="#E8481A">AI PIPELINE</text>
-        <g font-size="14">
-          <rect x="14" y="44" width="260" height="38" rx="12" fill="#FFFFFF"/>
-          <text x="28" y="68"><tspan font-weight="700">Understand</tspan><tspan fill="#5D6670">  voice or text</tspan></text>
-          <rect x="14" y="88" width="260" height="38" rx="12" fill="#FFFFFF"/>
-          <text x="28" y="112"><tspan font-weight="700">Read</tspan><tspan fill="#5D6670">  pay slip photo</tspan></text>
-          <rect x="14" y="132" width="260" height="38" rx="12" fill="#FFFFFF"/>
-          <text x="28" y="156"><tspan font-weight="700">Investigate</tspan><tspan fill="#5D6670">  ship records</tspan></text>
-          <rect x="14" y="176" width="260" height="38" rx="12" fill="#FFFFFF"/>
-          <text x="28" y="200"><tspan font-weight="700">Score</tspan><tspan fill="#5D6670">  in the code sandbox</tspan></text>
-          <rect x="14" y="220" width="260" height="38" rx="12" fill="#FFFFFF"/>
-          <text x="28" y="244"><tspan font-weight="700">Explain</tspan><tspan fill="#5D6670">  in their language</tspan></text>
+      <text x="138" y="40" font-size="11" font-weight="700" letter-spacing="1.8" fill="#E8481A">BACKEND</text>
+      <text x="138" y="64" font-size="17" font-weight="700">Hono API + SQLite</text>
+      <text x="138" y="84" font-size="13" fill="#5D6670">Saves reports, groups ship cases</text>
+
+      <g transform="translate(16 104)">
+        <rect width="330" height="368" rx="16" fill="#F2F4F6"/>
+        <text x="16" y="28" font-size="11" font-weight="700" letter-spacing="1.8" fill="#E8481A">AI PIPELINE</text>
+        <g transform="translate(14 42)">
+          <rect width="302" height="56" rx="14" fill="#FFFFFF"/>
+          <circle cx="30" cy="28" r="18" fill="#FDEAE3"/><use href="#iconMicrophone" x="19" y="17" width="22" height="22" color="#E8481A"/>
+          <text x="60" y="24" font-size="15" font-weight="700">Understand</text>
+          <text x="60" y="43" font-size="12" fill="#5D6670">voice or text · MiMo V2.6 Flash</text>
+        </g>
+        <g transform="translate(14 106)">
+          <rect width="302" height="56" rx="14" fill="#FFFFFF"/>
+          <circle cx="30" cy="28" r="18" fill="#FDEAE3"/><use href="#iconCamera" x="19" y="17" width="22" height="22" color="#E8481A"/>
+          <text x="60" y="24" font-size="15" font-weight="700">Read</text>
+          <text x="60" y="43" font-size="12" fill="#5D6670">pay slip photo · Llama 4 Scout</text>
+        </g>
+        <g transform="translate(14 170)">
+          <rect width="302" height="56" rx="14" fill="#FFFFFF"/>
+          <circle cx="30" cy="28" r="18" fill="#FDEAE3"/><use href="#iconSearch" x="19" y="17" width="22" height="22" color="#E8481A"/>
+          <text x="60" y="24" font-size="15" font-weight="700">Investigate</text>
+          <text x="60" y="43" font-size="12" fill="#5D6670">ship records · DeepSeek V4 Flash</text>
+        </g>
+        <g transform="translate(14 234)">
+          <rect width="302" height="56" rx="14" fill="#FFFFFF"/>
+          <circle cx="30" cy="28" r="18" fill="#FDEAE3"/><use href="#iconCode" x="19" y="17" width="22" height="22" color="#E8481A"/>
+          <text x="60" y="24" font-size="15" font-weight="700">Score</text>
+          <text x="60" y="43" font-size="12" fill="#5D6670">Python in the Otari sandbox</text>
+        </g>
+        <g transform="translate(14 298)">
+          <rect width="302" height="56" rx="14" fill="#FFFFFF"/>
+          <circle cx="30" cy="28" r="18" fill="#FDEAE3"/><use href="#iconChat" x="19" y="17" width="22" height="22" color="#E8481A"/>
+          <text x="60" y="24" font-size="15" font-weight="700">Explain</text>
+          <text x="60" y="43" font-size="12" fill="#5D6670">in their language · Gemma 3 27B</text>
         </g>
       </g>
     </g>
 
-    <path d="M690 300h76" stroke="#E8481A" stroke-width="2.5" marker-end="url(#arrowAccent)"/>
-    <text x="728" y="290" text-anchor="middle" font-size="12" fill="#E8481A" font-weight="700">/api/v1</text>
+    <path d="M696 300h48" stroke="#E8481A" stroke-width="2.5" marker-end="url(#arrowAccent)"/>
+    <text x="720" y="290" text-anchor="middle" font-size="11" font-weight="700" fill="#E8481A">/api/v1</text>
 
-    <g transform="translate(772 92)">
-      <rect width="288" height="330" rx="20" fill="#FFFFFF" stroke="#E8481A" stroke-width="2.5"/>
-      <text x="20" y="34" font-size="13" font-weight="700" letter-spacing="2" fill="#E8481A">OTARI GATEWAY</text>
-      <text x="20" y="62" font-size="18" font-weight="700">api.otari.ai</text>
-      <g font-size="13" font-weight="700">
-        <rect x="20" y="76" width="118" height="28" rx="14" fill="#FDEAE3"/><text x="79" y="95" text-anchor="middle" fill="#E8481A">Guardrails</text>
-        <rect x="146" y="76" width="122" height="28" rx="14" fill="#FDEAE3"/><text x="207" y="95" text-anchor="middle" fill="#E8481A">Routing</text>
-        <rect x="20" y="110" width="118" height="28" rx="14" fill="#FDEAE3"/><text x="79" y="129" text-anchor="middle" fill="#E8481A">Budgets</text>
-        <rect x="146" y="110" width="122" height="28" rx="14" fill="#FDEAE3"/><text x="207" y="129" text-anchor="middle" fill="#E8481A">Per-user caps</text>
-        <rect x="20" y="144" width="118" height="28" rx="14" fill="#FDEAE3"/><text x="79" y="163" text-anchor="middle" fill="#E8481A">Web search</text>
-        <rect x="146" y="144" width="122" height="28" rx="14" fill="#FDEAE3"/><text x="207" y="163" text-anchor="middle" fill="#E8481A">Code sandbox</text>
+    <g transform="translate(750 100)">
+      <rect width="310" height="344" rx="20" fill="#FFFFFF" stroke="#E8481A" stroke-width="2.5"/>
+      <g transform="translate(20 20)">
+        <rect width="64" height="52" rx="14" fill="#FDEAE3"/>
+        <path d="M14 44V24a18 18 0 0 1 36 0v20" fill="none" stroke="#E8481A" stroke-width="5" stroke-linecap="round"/>
+        <rect x="9" y="42" width="46" height="5" rx="2.5" fill="#E8481A"/>
+        <circle cx="25" cy="30" r="2.5" fill="#E8481A"/><circle cx="32" cy="30" r="2.5" fill="#E8481A" opacity=".6"/><circle cx="39" cy="30" r="2.5" fill="#E8481A" opacity=".3"/>
       </g>
-      <text x="20" y="200" font-size="13" font-weight="700" letter-spacing="2" fill="#5D6670">OPEN-WEIGHT MODELS</text>
-      <g font-size="14">
-        <text x="20" y="226">MiMo V2.6 Flash</text>
-        <text x="20" y="250">Llama 4 Scout</text>
-        <text x="20" y="274">DeepSeek V4 Flash</text>
-        <text x="20" y="298">Gemma 3 27B</text>
-        <text x="20" y="320" font-size="12" fill="#5D6670">backups: Voxtral, Qwen3-VL, gpt-oss</text>
+      <text x="98" y="40" font-size="11" font-weight="700" letter-spacing="1.8" fill="#E8481A">OTARI GATEWAY</text>
+      <text x="98" y="64" font-size="17" font-weight="700">api.otari.ai</text>
+      <g font-size="12" font-weight="700" fill="#E8481A">
+        <rect x="20" y="88" width="132" height="30" rx="15" fill="#FDEAE3"/><use href="#iconShield" x="30" y="95" width="16" height="16" color="#E8481A"/><text x="52" y="108">Guardrails</text>
+        <rect x="158" y="88" width="132" height="30" rx="15" fill="#FDEAE3"/><use href="#iconRouting" x="168" y="95" width="16" height="16" color="#E8481A"/><text x="190" y="108">Routing</text>
+        <rect x="20" y="124" width="132" height="30" rx="15" fill="#FDEAE3"/><use href="#iconCoin" x="30" y="131" width="16" height="16" color="#E8481A"/><text x="52" y="144">Budgets</text>
+        <rect x="158" y="124" width="132" height="30" rx="15" fill="#FDEAE3"/><use href="#iconPerson" x="168" y="131" width="16" height="16" color="#E8481A"/><text x="190" y="144">Per-user caps</text>
+        <rect x="20" y="160" width="132" height="30" rx="15" fill="#FDEAE3"/><use href="#iconGlobe" x="30" y="167" width="16" height="16" color="#E8481A"/><text x="52" y="180">Web search</text>
+        <rect x="158" y="160" width="132" height="30" rx="15" fill="#FDEAE3"/><use href="#iconTerminal" x="168" y="167" width="16" height="16" color="#E8481A"/><text x="190" y="180">Code sandbox</text>
       </g>
+      <text x="20" y="218" font-size="11" font-weight="700" letter-spacing="1.8" fill="#5D6670">OPEN-WEIGHT MODELS</text>
+      <g font-size="12">
+        <rect x="20" y="230" width="132" height="40" rx="12" fill="#F2F4F6"/>
+        <circle cx="40" cy="250" r="12" fill="#E8481A"/><text x="40" y="254" text-anchor="middle" font-weight="700" fill="#FFFFFF">M</text>
+        <text x="58" y="254" font-weight="700">MiMo V2.6</text>
+        <rect x="158" y="230" width="132" height="40" rx="12" fill="#F2F4F6"/>
+        <circle cx="178" cy="250" r="12" fill="#2E4A63"/><text x="178" y="254" text-anchor="middle" font-weight="700" fill="#FFFFFF">L</text>
+        <text x="196" y="254" font-weight="700">Llama 4 Scout</text>
+        <rect x="20" y="276" width="132" height="40" rx="12" fill="#F2F4F6"/>
+        <circle cx="40" cy="296" r="12" fill="#123E8C"/><text x="40" y="300" text-anchor="middle" font-weight="700" fill="#FFFFFF">D</text>
+        <text x="58" y="300" font-weight="700">DeepSeek V4</text>
+        <rect x="158" y="276" width="132" height="40" rx="12" fill="#F2F4F6"/>
+        <circle cx="178" cy="296" r="12" fill="#00804A"/><text x="178" y="300" text-anchor="middle" font-weight="700" fill="#FFFFFF">G</text>
+        <text x="196" y="300" font-weight="700">Gemma 3 27B</text>
+      </g>
+      <text x="20" y="334" font-size="11" fill="#5D6670">Backups: Voxtral · Qwen3-VL · gpt-oss</text>
     </g>
 
-    <path d="M916 426v54" stroke="#E8481A" stroke-width="2.5" marker-end="url(#arrowAccent)"/>
-    <text x="928" y="458" font-size="12" fill="#E8481A" font-weight="700">MCP</text>
-    <path d="M690 560h76" stroke="#5D6670" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arrowInk)"/>
-    <text x="728" y="550" text-anchor="middle" font-size="12" fill="#5D6670">ship search</text>
-    <path d="M526 526v34h160" stroke="#5D6670" stroke-width="2.5" stroke-dasharray="6 5" fill="none"/>
+    <path d="M905 448v38" stroke="#E8481A" stroke-width="2.5" marker-end="url(#arrowAccent)"/>
+    <text x="917" y="472" font-size="11" font-weight="700" fill="#E8481A">MCP</text>
 
-    <g transform="translate(772 486)">
-      <rect width="288" height="124" rx="20" fill="#14181D"/>
-      <text x="20" y="34" font-size="13" font-weight="700" letter-spacing="2" fill="#F2B705">MCP · SHIPWATCH</text>
-      <g font-size="14" fill="#FFFFFF">
-        <text x="20" y="62">findShip · getInspectionHistory</text>
-        <text x="20" y="84">getFlagHistory · getAbandonmentCases</text>
+    <g transform="translate(750 492)">
+      <rect width="310" height="152" rx="20" fill="#14181D"/>
+      <g transform="translate(18 26)">
+        <rect x="14" y="20" width="16" height="11" rx="1.5" fill="#E8481A"/>
+        <rect x="32" y="20" width="16" height="11" rx="1.5" fill="#F2B705"/>
+        <rect x="23" y="8" width="16" height="11" rx="1.5" fill="#8FA3B5"/>
+        <rect x="52" y="10" width="12" height="21" rx="2" fill="#FFFFFF"/>
+        <path d="M0 33h76l-9 16H9z" fill="#FFFFFF"/>
+        <path d="M0 58c8-3 16-3 24 0s16 3 24 0 16-3 28 0" fill="none" stroke="#5D6670" stroke-width="2" stroke-linecap="round"/>
+        <g transform="translate(12 70)">
+          <path d="M0 5c0-3.5 26-3.5 26 0v24c0 3.5-26 3.5-26 0z" fill="#2E4A63" stroke="#F2B705" stroke-width="1.5"/>
+          <ellipse cx="13" cy="5" rx="13" ry="3.8" fill="#14181D" stroke="#F2B705" stroke-width="1.5"/>
+          <path d="M0 15c0 3.5 26 3.5 26 0" fill="none" stroke="#F2B705" stroke-width="1.2"/>
+        </g>
+        <text x="46" y="94" font-size="10" fill="#C9D3DB">records</text>
       </g>
-      <text x="20" y="108" font-size="12" fill="#C9D3DB">Tokyo MOU · Paris MOU · ILO records</text>
+      <text x="112" y="36" font-size="11" font-weight="700" letter-spacing="1.8" fill="#F2B705">MCP · SHIPWATCH</text>
+      <g font-size="12" fill="#FFFFFF">
+        <text x="112" y="60">findShip</text>
+        <text x="112" y="78">getInspectionHistory</text>
+        <text x="112" y="96">getFlagHistory</text>
+        <text x="112" y="114">getAbandonmentCases</text>
+      </g>
+      <text x="112" y="138" font-size="11" fill="#C9D3DB">Tokyo MOU · Paris MOU · ILO</text>
     </g>
+
+    <path d="M511 594v24h233" stroke="#5D6670" stroke-width="2.5" stroke-dasharray="6 5" fill="none" marker-end="url(#arrowInk)"/>
+    <text x="628" y="610" text-anchor="middle" font-size="11" fill="#5D6670">ship search</text>
   </g>
 </svg>
